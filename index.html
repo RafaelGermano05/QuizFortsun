@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Fortsun</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen active">
+            <h1>Bem-vindo ao Quiz Fortsun!</h1>
+            <p>Teste seus conhecimentos com perguntas divertidas! 🎯</p>
+            <input type="text" id="participant-name" placeholder="Digite seu nome completo" required>
+            <button id="start-button">Iniciar Quiz</button>
+        </div>
+
+        <div class="question-screen">
+            <div class="timer">Tempo restante: <span id="time-left">10:00</span></div>
+            <div class="question"></div>
+            <div class="options"></div>
+        </div>
+
+        <div class="result-screen">
+            <h2>Quiz Finalizado!</h2>
+            <div class ="resultado"><div class="result"></div>
+            <div class="time-taken"></div></div>
+            <button id="restart-button">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
