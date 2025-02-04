@@ -23,16 +23,17 @@ body {
 #start-button{
     background-color: #c3fffc;
     color: #031024;
-    padding: 5.5px;
+    padding: 5.5px 11.5px;
     border: none;
     border-radius: 8px;
     font-size: 15.5px;
+    margin-top: 17.5px;
 }
 
 #start-button:hover{
     background-color: #034b97;
     color: #c3fffc;
-    padding: 7px;
+    padding: 7px 14px;
     font-size: 15.7px;
     cursor: pointer;
 }
@@ -42,7 +43,7 @@ body {
     color: #c3fffc;
     border: none;
     border-radius: 4px;
-    padding: 5.5px;
+    padding: 8.5px 27px;
 }
 
 #participant-name::placeholder{
