@@ -19,6 +19,37 @@ body {
     text-align: center;
     font-size: 17.5px;
 }
+
+#start-button{
+    background-color: #c3fffc;
+    color: #031024;
+    padding: 5.5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15.5px;
+}
+
+#start-button:hover{
+    background-color: #034b97;
+    color: #c3fffc;
+    padding: 7px;
+    font-size: 15.7px;
+    cursor: pointer;
+}
+
+#participant-name{
+    background-color: #063d77;
+    color: #c3fffc;
+    border: none;
+    border-radius: 4px;
+    padding: 5.5px;
+}
+
+#participant-name::placeholder{
+    color: #e6fffe;
+}
+
+
 .container h1{
     color: aliceblue;
 }
