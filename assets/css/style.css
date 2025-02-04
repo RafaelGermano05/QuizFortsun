@@ -19,8 +19,9 @@ body {
     padding: 20px;
     max-width: 500px;
     text-align: center;
-    font-size: 17.5px;
+    font-size: 17.5px;   
 }
+
 
 #start-button{
     background-color: #c3fffc;
@@ -62,6 +63,9 @@ body {
 
 .container i{
     color: #20fdfd;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .container a{
