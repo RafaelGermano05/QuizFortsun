@@ -1,14 +1,16 @@
 const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby9p__RWY2iQ0-UhNuLlYyGoBN6cDlJkN0wIchcPz1Z10poWXXwaJdHPGQX8NDtMmn_5w/exec"; 
 
         const questions = [
-            { question: "No sistema de remuneração 2025 da Fortsun, oque é conquista?", options: ["Vendas", "Faturamento +15K", "New Mas(Ativação)", "Meta Batida"], answer: "New Mas(Ativação)" },
-            { question: "Quanto de TPV Ponderado Médio o Seller tem que ter para migrar?", options: ["R$10.000,00", "R$20.000,00", "R$30.000,00", "R$15.000,00"], answer: "R$15.000,00" },
-            { question: "No TPV Médio Real o Seller faturou apenas 9K, dos 9K, foram 7K no Parcelado e 2k no Crédito, devido isso ele vai migrar!", options: ["Verdadeiro", "Falso"], answer: "Verdadeiro" },
-            { question: "Para ser um cliente VEMOS ele:", options: ["Fatura +15K", "CNPJ +70% Parcelado", "Fatura tudo no débito", "Trabalha com alimentação"], answer: "CNPJ +70% Parcelado" },
-            { question: "O que o consultor tem que fazer para ser Ouro?", options: ["Fazer 20 vendas", "Conseguir 20 ativações", "Ter 10 migrações", "+60% Parcelado de Faturamento"], answer: "+60% Parcelado de Faturamento" },
-            { question: "Um novato está no seu segundo mês, e uma das suas vendas já migrou por faturar muito, dito isso, mesmo sendo novato ele vai ganhar a safra desse cliente", options: ["Verdadeiro", "Falso"], answer: "Falso" },
-            { question: "Qual é o valor de referência do Acelerador de Volume e Qualidade?", options: ["Valor conquistado na Safra(Migração)", "Salário", "Valor conquistado na Conquista", "Valor do melhor Seller"], answer: "Valor conquistado na Safra(Migração)" },
-            { question: "Qual é o valor de referência para calcular a Remuneração da Conquista?", options: ["Valor conquistado na Safra(Migração)", "Salário", "Valor conquistado na Conquista", "Valor do melhor Seller"], answer: "Salário" },
+            { question: "1. Quais são os nossos Pilares ?", options: ["a) Superação, Empower, Criação,  Excelência, Confiança e Lealdade.", "b) Resiliência, Empower,  Inovação, Excelência, Confiança e Lealdade.", "c) Superação, Empower, Inovação, Excelência, Confiança e Lealdade.", "d) Persistência,  Empower, Criação,  Excelência, Confiança e Lealdade."], answer: "c) Superação, Empower, Inovação, Excelência, Confiança e Lealdade." },
+            { question: "2. Sobre o que fala o valor “Superação” ?", options: ["a) ”Superar as barreiras das oportunidades”.", "b) “Transformar desafios em oportunidades”.", "c) “Visualizar problemas em soluções”.", "d)  “Transformar desafios e possibilidades”."], answer: "b) “Transformar desafios em oportunidades”." },
+            { question: "3. Empower significa “Cuidar das pessoas e as colocar no centro” ?", options: ["Verdadeiro", "Falso"], answer: "Verdadeiro" },
+            { question: "4. Um bom pitch é longo, aborda todos os benefícios do produto para que o cliente ", options: ["Verdadeiro", "Falso"], answer: "Falso" },
+            { question: "5. O que é o Pitch de vendas ?", options: ["a) O pitch de vendas é uma introdução subjetiva que busca convencer o cliente a fechar a compra.", "b) O pitch de vendas é uma apresentação subjetiva que busca convencer o cliente a fechar a compra.", "c) O pitch de vendas é o desenvolvimento preciso para convencer o cliente de não fechar.", "d) O pitch de vendas é uma apresentação objetiva que busca convencer o cliente a fechar a compra."], answer: "d) O pitch de vendas é uma apresentação objetiva que busca convencer o cliente a fechar a compra." },
+            { question: "6. O que usamos de base para construir um pitch vencedor ?", options: ["a) Abertura impactante, Problema, Solução, Diferenciais, Call to Action.", "b) Abertura impactante, Variáveis, Solução, Diferenciais, Call to Action.", "c) Empower, Problema, Solução, Diferenciais, Call to Action.", "d) Abertura impactante, Problema, Valores, Diferenciais, Call to Action."], answer: "a) Abertura impactante, Problema, Solução, Diferenciais, Call to Action." },
+            { question: "7. “Os atributos do produto são suficientes para encantar o cliente”", options: ["Verdadeiro", "Falso"], answer: "Falso" },
+            { question: "8.Sobre objeções do cliente:", options: ["a) Melhor evitar", "b) Não vale a pena negociar com o cliente", "c) Antecipar-se e demonstrar segurança ao cliente ", "d) Insistir na venda e trabalhar as objeções depois"], answer: "c) Antecipar-se e demonstrar segurança ao cliente" },
+            { question: "9. “O melhor cliente é aquele que usa muito PIX, Débito e Link de Pagamento”", options: ["Verdadeiro", "Falso"], answer: "Falso" },
+            { question: "10. “Cliente que fatura 15.000,00 no Parcelado é o ideal para garantir uma boa parceria”", options: ["Verdadeiro", "Falso"], answer: "Verdadeiro" },
         ];
 
         const startScreen = document.querySelector('.start-screen');
