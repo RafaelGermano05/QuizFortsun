@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background-color: #2279746c;
-    color: #061150;
+    background-color: #000224e0;
+    color: #c3fffc;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,14 +11,26 @@ body {
     height: 100vh;
 }
 .container {
-    background: #f4f5fc;
+    background: #050018;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(109, 217, 236, 0.479);
     padding: 20px;
     max-width: 500px;
     text-align: center;
     font-size: 17.5px;
 }
+.container h1{
+    color: aliceblue;
+}
+
+.container i{
+    color: #20fdfd;
+}
+
+.container a{
+    color: #20fdfd;
+}
+
 .question {
     font-size: 1.2em;
     margin: 20px 0;
