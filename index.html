@@ -3,29 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Fortsun</title>
+    <title>Quiz SUN ACADEMY' - FORTSUN BRASIL</title>
     <link rel="shortcut icon" href="assets/EMPOWER 25' Sem Fronteiras Ediçaõ Piauí..png" type="image/x-icon">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body{
+            background: linear-gradient(rgba(2, 11, 33, 0.975), rgba(6, 24, 67, 0.838)),
+      url("assets/sun\ academy\ \(3\).png") no-repeat center center/cover;
+        }
+    </style>
+</head>
 <body>
-    <div class="container">
-        <div class="start-screen active">
-            <h1>Bem-vindo ao Quiz EMP<a>O</a>WER<a>25</a>'!<i>EDIÇÃO PIAUÍ</i> </h1>
-            <p>Teste seus conhecimentos com perguntas divertidas! 🎯</p>
-            <input type="text" id="participant-name" placeholder="Digite seu nome completo" required><br>
-            <button id="start-button">Iniciar Quiz</button>
+    <div class="quiz-container">
+        <!-- Tela de Início -->
+        <div class="screen start-screen active">
+            <div class="logo-container">
+                <div class="logo-circle animate__animated animate__pulse animate__infinite">
+                    <img src="assets/sun academy (3).png" alt="Logo EMPOWER25'" class="logo-image">
+                </div>
+            </div>
+            <div class="start-content">
+                <h2>Bem-vindo ao Quiz <span class="empower-text">SUN<span> </span><span>ACADEMY</span>'</span></h2>
+                <p class="edition">FORTSUN BRASIL</p>
+                <p class="subtitle">Teste seus conhecimentos com perguntas divertidas e desafiantes!</p>
+                
+                <div class="input-group">
+                    <input type="text" id="participant-name" placeholder="Digite seu nome completo" required>
+                    <span class="input-icon">👤</span>
+                </div>
+                
+                <button id="start-button" class="btn-primary animate__animated animate__pulse animate__infinite">
+                    <span>Iniciar Quiz</span>
+                    <span class="icon">🚀</span>
+                </button>
+            </div>
         </div>
 
-        <div class="question-screen">
-            <div class="timer">Tempo restante: <span id="time-left">10:00</span></div>
-            <div class="question"></div>
-            <div class="options"></div>
+        <!-- Tela de Perguntas -->
+        <div class="screen question-screen">
+            <div class="quiz-header">
+                <div class="quiz-info">
+                    <div class="player-info">
+                        <span class="player-icon">👤</span>
+                        <span id="player-name-display"></span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text"><span id="current-question">1</span>/<span id="total-questions">5</span></span>
+                    </div>
+                </div>
+                <div class="timer-container">
+                    <div class="timer-circle">
+                        <svg class="timer-svg" viewBox="0 0 36 36">
+                            <path class="timer-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="timer-circle-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        </svg>
+                        <span id="time-left" class="timer-text">10:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question animate__animated animate__fadeIn"></div>
+                <div class="options"></div>
+            </div>
         </div>
 
-        <div class="result-screen">
-            <h2>Quiz Finalizado!</h2>
-            <div class ="resultado"><div class="result"></div>
-            <div class="time-taken"></div></div>
+        <!-- Tela de Resultado -->
+        <div class="screen result-screen">
+            <div class="result-header">
+                <h2>Quiz Concluído!</h2>
+                <div class="result-score">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/10</span>
+                    </div>
+                    <div class="score-message" id="score-message"></div>
+                </div>
+            </div>
+
+            <div class="result-details">
+                <div class="detail-card">
+                    <div class="detail-icon">⏱️</div>
+                    <div class="detail-info">
+                        <h3>Tempo</h3>
+                        <p id="time-taken">00:00</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">📊</div>
+                    <div class="detail-info">
+                        <h3>Desempenho</h3>
+                        <p id="performance">0%</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">👤</div>
+                    <div class="detail-info">
+                        <h3>Participante</h3>
+                        <p id="player-result-name"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="result-actions">
+                <button id="restart-button" class="btn-primary">
+                    <span>Jogar Novamente</span>
+                    <span class="icon">🔄</span>
+                </button>
+            </div> -->
+
+            <div class="celebration"></div>
         </div>
     </div>
 
