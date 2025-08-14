@@ -1,16 +1,10 @@
 const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby9p__RWY2iQ0-UhNuLlYyGoBN6cDlJkN0wIchcPz1Z10poWXXwaJdHPGQX8NDtMmn_5w/exec"; 
 
 const questions = [
-    { question: "1. No Plano de Cargos, Carreiras e Salários (PCCS), qual é a pontuação mínima exigida na avaliação de competências para progressão de carreira?", options: ["A) 6 pontos", "B) 8 pontos", "C) 10 pontos"], answer: "B) 8 pontos" },
-    { question: "2. Qual é um dos critérios para o Nível I do PCCS?", options: ["A) Aderência mínima de 50% da base e R$ 120.000,00 em vendas", "B) Aderência mínima de 35% da base e R$ 100.000,00 em vendas", "C) Realizar mentorias para consultores novatos"], answer: "B) Aderência mínima de 35% da base e R$ 100.000,00 em vendas" },
-    { question: "3. O Círculo de Ouro, criado por Simon Sinek, é formado por quais três perguntas?", options: ["A) Onde? Quando? Por quê?", "B) Quem? O quê? Como?", "C) Por quê? Como? O quê?"], answer: "C) Por quê? Como? O quê?" },
-    { question: "4. Segundo o Círculo de Ouro, qual é o impacto de começar pelo “Por quê” na comunicação de vendas?", options: ["A) Aumenta a conexão, confiança e valor percebido", "B) Reduz o tempo da abordagem", "C) Facilita descontos agressivos"], answer: "A) Aumenta a conexão, confiança e valor percebido" },
-    { question: "5. No planejamento de rota, qual ferramenta é citada para mapear setores aderentes à estratégia?", options: ["A) Google Maps", "B) Trello", "C) Excel"], answer: "A) Google Maps" },
-    { question: "6. No pós-venda, qual é o prazo indicado para reforçar a experiência positiva e resolver dúvidas do cliente?”", options: ["A) 3 dias", "B) 10 dias", "C) 30 dias"], answer: "B) 10 dias" },
-    { question: "7. Qual é um dos objetivos do planejamento e roteirização de rota?", options: ["A) Aumentar o número de reuniões internas", "B) Garantir máxima efetividade em campo", "C) Diminuir o contato com clientes antigos"], answer: "B) Garantir máxima efetividade em campo" },
-    { question: "8. No Nível III do PCCS, qual valor mínimo deve ser atingido em vendas?", options: ["A) R$ 100.000,00", "B) R$ 120.000,00", "C) R$ 150.000,00"], answer: "B) R$ 120.000,00" },
-    { question: "9. Qual é um benefício do modelo do Círculo de Ouro nas vendas?", options: ["A) Facilita vendas apenas para grandes empresas", "B) Torna o pitch mais natural e consultivo", "C) Garante fechamento imediato"], answer: "B) Torna o pitch mais natural e consultivo" },
-    { question: "10. O que deve ser registrado durante agendamentos de retorno (follow-up)?", options: ["A) Apenas vendas efetivadas", "B) Apenas contatos com o decisor presente", "C) Todos os contatos realizados, mesmo sem o decisor presente"], answer: "C) Todos os contatos realizados, mesmo sem o decisor presente" },
+    { question: "1. No planejamento de rota, qual ferramenta é citada para mapear setores aderentes à estratégia?", options: ["A) Google Maps", "B) Trello", "C) Excel"], answer: "A) Google Maps" },
+    { question: "2. No pós-venda, qual é o prazo indicado para reforçar a experiência positiva e resolver dúvidas do cliente?”", options: ["A) 3 dias", "B) 10 dias", "C) 30 dias"], answer: "B) 10 dias" },
+    { question: "3. Qual é um dos objetivos do planejamento e roteirização de rota?", options: ["A) Aumentar o número de reuniões internas", "B) Garantir máxima efetividade em campo", "C) Diminuir o contato com clientes antigos"], answer: "B) Garantir máxima efetividade em campo" },
+    { question: "4. O que deve ser registrado durante agendamentos de retorno (follow-up)?", options: ["A) Apenas vendas efetivadas", "B) Apenas contatos com o decisor presente", "C) Todos os contatos realizados, mesmo sem o decisor presente"], answer: "C) Todos os contatos realizados, mesmo sem o decisor presente" },
 ];
 
 // Elementos do DOM
