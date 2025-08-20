@@ -77,15 +77,57 @@
             </div>
         </div>
 
-        <!-- Tela de Resultado -->
-        <div id= "fundo-foto" class="screen result-screen">
+      <!-- Tela de Resultado -->
+        <div class="screen result-screen">
             <div class="result-header">
-                
-                
+                <h2>Quiz Concluído!</h2>
+                <div class="result-score">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/10</span>
+                    </div>
+                    <div class="score-message" id="score-message"></div>
+                </div>
             </div>
 
-            
+            <div class="result-details">
+                <div class="detail-card">
+                    <div class="detail-icon">⏱️</div>
+                    <div class="detail-info">
+                        <h3>Tempo</h3>
+                        <p id="time-taken">00:00</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">📊</div>
+                    <div class="detail-info">
+                        <h3>Desempenho</h3>
+                        <p id="performance">0%</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">👤</div>
+                    <div class="detail-info">
+                        <h3>Participante</h3>
+                        <p id="player-result-name"></p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- <div class="result-actions">
+                <button id="restart-button" class="btn-primary">
+                    <span>Jogar Novamente</span>
+                    <span class="icon">🔄</span>
+                </button>
+            </div> -->
+
+            <div class="celebration"></div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
             <!-- <div class="result-actions">
                 <button id="restart-button" class="btn-primary">
                     <span>Jogar Novamente</span>
